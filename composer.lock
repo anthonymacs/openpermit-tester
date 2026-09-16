@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cda2add6397422fb1a2eb5b9207f1575",
+    "content-hash": "3a68030a651285d3930676058983fe9d",
     "packages": [
         {
             "name": "brick/math",
@@ -2549,6 +2549,37 @@
                 }
             ],
             "time": "2026-02-16T23:10:27+00:00"
+        },
+        {
+            "name": "openpermit/openpermit",
+            "version": "0.1.0",
+            "dist": {
+                "type": "path",
+                "url": "../openpermit",
+                "reference": "cb79f562c528c74f84c7b6cd0b4936dec7522933"
+            },
+            "require": {
+                "illuminate/database": "^11.0|^12.0|^13.0",
+                "illuminate/support": "^11.0|^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OpenPermit\\OpenPermit\\OpenPermitServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OpenPermit\\OpenPermit\\": "src/"
+                }
+            },
+            "description": "Generic permit application & workflow management for government agencies",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "phpoption/phpoption",
